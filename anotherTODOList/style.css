@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #111;
+}
+.head{
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+}
+.head span {
+    color: lime;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input input{
+    font-size: 2vw;
+    padding: 1% 2%;
+    border-radius: 10vw;
+    outline: none;
+    border: none;
+}
+.input .addBtn{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 2.5vw;
+    border: none;
+    background-color: lime;
+    color: #fff;
+    margin: 0.25vw;
+    cursor: pointer;
+}
+.addBtn img {
+    width: 4vw;
+}
+#showTodo{
+    display: flex;
+    justify-content: center;
+}
+#showTodo .todo{
+    display: flex;
+    flex-direction: column;
+}
+#showTodo .todo li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 0;
+}
+#showTodo .todoname {
+    width: 70vw;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+    border-bottom: 0.2vw white solid;
+}
+#showTodo .buttons{
+    width: 20vw;
+    margin-left: 10%;
+}
+.delBtn {
+    border-radius: 0.5vw;
+    padding: 2% 8%;
+    font-size: 2vw;
+    border: none;
+    background-color: yellow;
+    color: red;
+}
+.editBtn {
+    border-radius: 0.5vw;
+    padding: 2% 8%;
+    font-size: 2vw;
+    border: none;
+    margin-right: 5%;
+    background-color: lightblue;
+}
+.delAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delAll button{
+    border-radius: 0.5vw;
+    padding: 1% 4%;
+    font-size: 2vw;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+@media (max-width: 450px) {
+    .head{
+        font-size: 4.5vw;
+        margin-top: 12%;
+    }
+    .input input{
+        font-size: 5vw;
+        padding: 3% 5%;
+        margin-top: 5%;
+    }
+    .addBtn img {
+        width: 10vw;
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+    .input .addBtn{
+        height: 12vw;
+        width: 12vw;
+        border-radius: 8vw;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+    #showTodo .todoname {
+        font-size: 7vw;
+        width: 60vw;
+    }
+    #showTodo .todo li {
+        margin-top: 10%;
+    }
+
+    #showTodo .buttons{
+        width: 30vw;
+        margin-left: 3%;
+    }
+    .buttons button {
+        margin: 5% 1%;
+    }
+    .delBtn {
+        border-radius: 0.5vw;
+        padding: 2% 4%;
+        font-size: 5vw;
+        border: none;
+        background-color: yellow;
+        color: red;
+    }
+    .editBtn {
+        border-radius: 0.5vw;
+        padding: 2% 4%;
+        font-size: 5vw;
+        border: none;
+        margin-right: 5%;
+    }
+    .delAll button{
+        padding: 3% 6%;
+        font-size: 6vw;
+    }
+}
